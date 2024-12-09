@@ -5,6 +5,7 @@ import Login from "./pages/sign-in";
 import Dashboard from "./pages/dashboard";
 import Coin from "./pages/coin";
 import NotFound from "./pages/404NotFound";
+import SignUp from "./pages/sign-up";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
+        path: "/sign-up",
+        element: <SignUp />,
+      },
+      {
         path: "/dashboard",
         element: <Dashboard />,
       },
@@ -28,9 +33,9 @@ const router = createBrowserRouter([
         element: <Coin />,
       },
       {
-        path:"*",
-        element: <NotFound/>
-      }
+        path: "*",
+        element: <NotFound />,
+      },
     ],
   },
 ]);
